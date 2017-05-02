@@ -11,7 +11,7 @@ class PhotosController < ApplicationController
     end
   end
 
-  def show
+  def preview
     @photo = params[:photo]
   end
 end
