@@ -1,0 +1,6 @@
+= simple_form_for :photo, url: { action: 'index' }, method: :get, remote: true do |f|
+  = f.input :query
+  = f.button :submit
+- if @photos
+  - @photos.each do |photo|
+    = link_to image_tag(thumb_url(photo)), photo_path(id: photo['id'], photo: photo)

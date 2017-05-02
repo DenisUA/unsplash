@@ -1,0 +1,12 @@
+h1 Photo info
+.col-md-8
+  = image_tag(regular_url(@photo))
+.col-md-4
+  ' Likes:
+  = @photo[:likes]
+  br
+  ' Author:
+  = @photo[:user][:first_name]
+  br
+  ' Location:
+  = @photo[:user][:location]
